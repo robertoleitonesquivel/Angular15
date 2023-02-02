@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UntypedFormBuilder, FormControl, UntypedFormGroup } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-checkbox',
@@ -21,13 +21,11 @@ export class CheckboxComponent implements OnInit {
   }
 
   public click(): void {
-    console.log(this.frm.value);
 
     let x: boolean = this.frm.controls['Active'].value ? false : true;
 
     this.frm.controls['Active'].setValue(x);
-    
-    console.log(this.frm.value);
+
   }
 
 }

@@ -30,11 +30,10 @@ export class FormReactivesComponent implements OnInit {
       Nombre: []
     });
 
+    this.frmBuilder.controls['Id'].setValue(1);
+
     console.log(this.frmBuilder.value.Id);
 
-    //this.frmBuilder.value.Id;
-
-    this.frmBuilder.controls['Nombre'].setValue('');
     this.frmUnTypeBuilder.controls['Nombre'].setValue('');
   }
 

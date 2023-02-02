@@ -4,9 +4,13 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@pp/*":["src/app/*"],
+      "@app/*":["src/app/*"],
       "@Common/*":["src/app/Common/*"],
-      "@assets/*":["src/assets/*"]
+      "@assets/*":["src/assets/*"],
+      "@Component/*":["src/app/Componentes/*"],
+      "@Guards/*":["src/app/Guards/*"],
+      "@Services/*":["src/app/Services/*"],
+      "@Constants/*":["src/app/Constants/*"]
     },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
