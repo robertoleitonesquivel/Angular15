@@ -22,7 +22,11 @@ export class CheckboxComponent implements OnInit {
 
   public click(): void {
     console.log(this.frm.value);
-    this.frm.controls['Active'].setValue(true);
+
+    let x: boolean = this.frm.controls['Active'].value ? false : true;
+
+    this.frm.controls['Active'].setValue(x);
+    
     console.log(this.frm.value);
   }
 

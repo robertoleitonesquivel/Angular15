@@ -2,7 +2,7 @@
 <button (click)="click()">Checkear</button>
 <br>
 <form [formGroup]="frm">
-<mat-checkbox formControlName="Active">Disabled</mat-checkbox>
+<mat-checkbox color="primary" formControlName="Active" (change)="click()">Disabled</mat-checkbox>
 <br>
 <input type="text" formControlName="Value">
 </form>
