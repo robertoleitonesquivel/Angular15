@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { UntypedFormBuilder, FormControl, UntypedFormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-checkbox',
@@ -8,9 +8,9 @@ import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 })
 export class CheckboxComponent implements OnInit {
 
-  frm!: FormGroup;
+  frm!: UntypedFormGroup;
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: UntypedFormBuilder) { }
 
   ngOnInit(): void {
 
